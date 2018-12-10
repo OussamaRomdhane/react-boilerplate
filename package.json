@@ -1,0 +1,46 @@
+{
+  "name": "react-app-boilerplate",
+  "version": "1.0.0",
+  "description": "A React boilerplate",
+  "scripts": {
+    "start": "./node_modules/.bin/webpack-dev-server --mode development --open --hot",
+    "build": "./node_modules/.bin/webpack --mode production",
+    "test": "./node_modules/.bin/jest --coverage",
+    "prettier": "./node_modules/.bin/prettier --write src/**/*.js"
+  },
+  "author": "Oussama Romdhane",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "babel-loader": "^8.0.4",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
+    "enzyme-to-json": "^3.3.5",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^23.6.0",
+    "prettier": "^1.15.3",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OussamaRomdhane/react-boilerplate.git"
+  },
+  "jest": {
+    "setupFiles": [
+      "./test/jestsetup.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  }
+}

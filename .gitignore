@@ -1,0 +1,12 @@
+# logs
+*.log
+npm-debug.log*
+
+# istanbul
+coverage
+
+/node_modules/
+/.vscode/
+/dist/
+
+.DS_Store
